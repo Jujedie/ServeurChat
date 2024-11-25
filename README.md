@@ -7,22 +7,22 @@ A code written in Java allowing you to execute a chat room between multiple clie
 
 1. **Compile the Server:**
    ```bash
-   javac serveurComplex.java
+   javac serveurs/*.java
    ```
 
 2. **Execute the Server:**
    ```bash
-   java serveurComplex
+   java serveurs/serveurComplex
    ```
 
 3. **Compile the Client:**
    ```bash
-   javac ClientComplex.java
+   javac clients/ClientComplex.java
    ```
 
 4. **Execute the Client:**
    ```bash
-   java ClientComplex
+   java clients/ClientComplex
    ```
 
 Repeat steps 3 and 4 for each client that wants to join the chat room.
