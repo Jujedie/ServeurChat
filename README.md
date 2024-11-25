@@ -39,6 +39,3 @@ Repeat steps 3 and 4 for each client that wants to join the chat room.
 
 - Ensure that the server is running before starting any clients.
 - The clients must connect to the server using the same IP address and port.
-```
-
-You can create a new file `README.md` in your repository with the above content.
