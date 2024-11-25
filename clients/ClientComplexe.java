@@ -4,20 +4,17 @@ import java.net.Socket;
 
 public class ClientComplexe
 {
-	public static void main(String[] a)
+	public static void main(String[] args)
 	{
+		if (args.length != 2) {
+			System.err.println("Usage: java ClientComplexe <host name> <port number>");
+			return;
+		}
 		Socket toServer;
-		String hostName;
-
-		try {
-			System.out.print("Enter the server name: ");
-			BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-			hostName = reader.readLine();
-		}catch (Exception e) {hostName = "localhost";}
+		String hostName = args[0];
+		int    portNum  = Integer.parseInt(args[1]);
 		
 		try{		
-			int    portNum  = 6000;
-
 			System.out.println("Connexion au serveur");
 
 			toServer = new Socket(hostName, portNum);

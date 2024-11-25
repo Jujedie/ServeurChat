@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ServeurComplexe {
-	public ServeurComplexe(){
+	public ServeurComplexe(int port){
 		try {
 			HashMap<String,PrintWriter> lstClients = new HashMap<>();
 			ArrayList<String[]> lstMessages = new ArrayList<>();
@@ -14,7 +14,7 @@ public class ServeurComplexe {
 			Thread tgdc = new Thread(new GerantDeChat(lstClients, lstMessages));
 			tgdc.start();
 			
-			ServerSocket ss = new ServerSocket(6000);
+			ServerSocket ss = new ServerSocket(port);
 			while (true) { // on boucle
 				// attendre patiemment un client
 				Socket s = ss.accept();
@@ -30,5 +30,12 @@ public class ServeurComplexe {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
-	}	
+	}
+	public static void main(String[] args) {
+		if (args.length != 1) {
+			System.err.println("Usage: java ServeurComplexe <port number>");
+			return;
+		}
+		new ServeurComplexe(Integer.parseInt(args[0]));
+	}
 }
