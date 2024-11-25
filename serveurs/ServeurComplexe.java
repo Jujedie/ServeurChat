@@ -20,7 +20,7 @@ public class ServeurComplexe {
 				Socket s = ss.accept();
 				// créer un GerantDeClient pour traiter ce nouveau client
 				GerantDeClientChat gdcc = new GerantDeClientChat(s,lstClients,lstMessages);
-				// mettre ce gérant de client dans une Thread
+				// mettre ce gérant de client dans un Thread
 				Thread tgdcc = new Thread(gdcc);
 				// lancer la thread qui gérera ce client
 				tgdcc.start();
