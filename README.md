@@ -15,7 +15,7 @@ software send and recieve message from a chat room.
 
 2. **Execute the Server:**
    ```bash
-   java serveurs/serveurComplex
+   java serveurs/serveurComplex <port>
    ```
 
 3. **Compile the Client:**
@@ -25,7 +25,7 @@ software send and recieve message from a chat room.
 
 4. **Execute the Client:**
    ```bash
-   java clients/ClientComplex
+   java clients/ClientComplex <hostname> <port>
    ```
 
 Repeat steps 3 and 4 for each client that wants to join the chat room.
