@@ -25,14 +25,20 @@ public class ClientComplexe
 			BufferedReader in = new BufferedReader(new InputStreamReader(toServer.getInputStream())); // pour lire à partir du serveur
 			BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in)); // pour lire à partir du clavier
 
-			while (true) {
+			String message="";
+			while (!message.equals("-Quitter")) {
 				if (in.ready()) {
 					System.out.println(in.readLine());
 				}
 				if (stdIn.ready()) {
-					out.println(stdIn.readLine());
+					message = stdIn.readLine();
+					out.println(message);
 				}
 			}
+
+			out.close();
+			in.close();
+			stdIn.close();
 		}
 		catch (Exception e) {e.printStackTrace();}
 	}
