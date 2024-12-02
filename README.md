@@ -24,7 +24,7 @@ javac serveurs/*.java
 Pour démarrer le serveur, exécutez la commande suivante :
 
 ```sh
-java serveurs/ServeurComplexe
+java serveurs/TestServeurComplexe
 ```
 
 ### Démarrer un client
@@ -36,14 +36,6 @@ java clients.ClientComplexe
 ```
 
 Le client vous demandera d'entrer le nom du serveur. Par défaut, utilisez `localhost`.
-
-### Tester le serveur
-
-Pour tester le serveur, vous pouvez exécuter la classe de test :
-
-```sh
-java serveurs/TestServeurComplexe
-```
 
 ## Licence
 
