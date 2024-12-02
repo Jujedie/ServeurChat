@@ -37,6 +37,12 @@ java clients.ClientComplexe
 
 Le client vous demandera d'entrer le nom du serveur. Par défaut, utilisez `localhost`.
 
+## Envoie de messages privé
+
+```
+NomDeL'Utilisateur-Message
+```
+
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
