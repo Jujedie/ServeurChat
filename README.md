@@ -2,45 +2,6 @@
 
 Ce projet implémente un serveur de chat complexe et un client de chat. Le serveur permet à plusieurs clients de se connecter et de communiquer entre eux.
 
-## Structure du projet
-
-```
-.gitignore
-clients/
-	ClientComplexe.class
-	
-
-ClientComplexe.java
-
-
-LICENSE
-serveurs/
-	GerantDeChat.class
-	
-
-GerantDeChat.java
-
-
-	GerantDeClientChat.class
-	
-
-GerantDeClientChat.java
-
-
-	ServeurComplexe.class
-	
-
-ServeurComplexe.java
-
-
-	TestServeurComplexe.class
-	
-
-TestServeurComplexe.java
-
-
-```
-
 ## Prérequis
 
 - Java Development Kit (JDK) installé
