@@ -41,6 +41,8 @@ Le client vous demandera d'entrer le nom du serveur. Par défaut, utilisez `loca
 
 ```
 NomDeL'Utilisateur-Message
+
+Exemple : Louis-L'appareil est désengagé.
 ```
 
 ## Licence
