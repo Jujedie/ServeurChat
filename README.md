@@ -12,31 +12,9 @@ Ce projet implémente un serveur de chat complexe et un client de chat. Le serve
 Pour compiler les fichiers Java, ouvrez un terminal à la racine du projet et exécutez les commandes suivantes :
 
 ```sh
-javac 
+javac clients/*.java
 
-ClientComplexe.java
-
-
-javac 
-
-ServeurComplexe.java
-
-
-javac 
-
-GerantDeChat.java
-
-
-javac 
-
-GerantDeClientChat.java
-
-
-javac 
-
-TestServeurComplexe.java
-
-
+javac serveurs/*.java
 ```
 
 ## Exécution
@@ -46,7 +24,7 @@ TestServeurComplexe.java
 Pour démarrer le serveur, exécutez la commande suivante :
 
 ```sh
-java serveurs.ServeurComplexe
+java serveurs/ServeurComplexe
 ```
 
 ### Démarrer un client
@@ -64,7 +42,7 @@ Le client vous demandera d'entrer le nom du serveur. Par défaut, utilisez `loca
 Pour tester le serveur, vous pouvez exécuter la classe de test :
 
 ```sh
-java serveurs.TestServeurComplexe
+java serveurs/TestServeurComplexe
 ```
 
 ## Licence
